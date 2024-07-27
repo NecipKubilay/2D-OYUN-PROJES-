@@ -1,0 +1,315 @@
+fileFormatVersion: 2
+guid: d64332d836cf9dc4fb894fd05ff3dbcb
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "B\u0131y\u0131kReisArmedRun-export_0"
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 160
+        width: 248
+        height: 297
+      alignment: 9
+      pivot: {x: 0.5, y: 0.44444445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d696aa50d9a534caa4f206c2a09c94
+      internalID: -1281028282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "B\u0131y\u0131kReisArmedRun-export_1"
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 163
+        width: 248
+        height: 297
+      alignment: 9
+      pivot: {x: 0.5, y: 0.44444445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5f8acb62c5a72e4cac9eac8aa911724
+      internalID: -1885297093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "B\u0131y\u0131kReisArmedRun-export_2"
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 160
+        width: 248
+        height: 277
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4765343}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c263308e0d2d302488722456736dbf93
+      internalID: -1586752557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "B\u0131y\u0131kReisArmedRun-export_3"
+      rect:
+        serializedVersion: 2
+        x: 2136
+        y: 160
+        width: 248
+        height: 264
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbe1ddf6161e9d74187be6ee302909bb
+      internalID: -1605292474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "B\u0131y\u0131kReisArmedRun-export_4"
+      rect:
+        serializedVersion: 2
+        x: 2776
+        y: 160
+        width: 248
+        height: 264
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5debe792910f6074a9f73ab2eda22bb0
+      internalID: 1239889748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "B\u0131y\u0131kReisArmedRun-export_5"
+      rect:
+        serializedVersion: 2
+        x: 3416
+        y: 162
+        width: 248
+        height: 264
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f16019e79be9b2b44a99d6980e9bd437
+      internalID: 1608275630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "B\u0131y\u0131kReisArmedRun-export_6"
+      rect:
+        serializedVersion: 2
+        x: 4056
+        y: 160
+        width: 248
+        height: 272
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4852941}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42bd8796438d1bf48b1994798e04d2a1
+      internalID: -2054517232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "B\u0131y\u0131kReisArmedRun-export_7"
+      rect:
+        serializedVersion: 2
+        x: 4698
+        y: 162
+        width: 248
+        height: 264
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b8987996c9b5d44a1696ba60c207d3
+      internalID: 203414160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      "B\u0131y\u0131kReisArmedRun-export_0": -1281028282
+      "B\u0131y\u0131kReisArmedRun-export_1": -1885297093
+      "B\u0131y\u0131kReisArmedRun-export_10": -1031278817
+      "B\u0131y\u0131kReisArmedRun-export_11": -1555339209
+      "B\u0131y\u0131kReisArmedRun-export_12": 903065638
+      "B\u0131y\u0131kReisArmedRun-export_13": -1503505511
+      "B\u0131y\u0131kReisArmedRun-export_14": -1596871181
+      "B\u0131y\u0131kReisArmedRun-export_15": -760257326
+      "B\u0131y\u0131kReisArmedRun-export_16": -1457877012
+      "B\u0131y\u0131kReisArmedRun-export_17": -713433701
+      "B\u0131y\u0131kReisArmedRun-export_18": -1232736158
+      "B\u0131y\u0131kReisArmedRun-export_19": -1560941065
+      "B\u0131y\u0131kReisArmedRun-export_2": -1586752557
+      "B\u0131y\u0131kReisArmedRun-export_3": -1605292474
+      "B\u0131y\u0131kReisArmedRun-export_4": 1239889748
+      "B\u0131y\u0131kReisArmedRun-export_5": 1608275630
+      "B\u0131y\u0131kReisArmedRun-export_6": -2054517232
+      "B\u0131y\u0131kReisArmedRun-export_7": 203414160
+      "B\u0131y\u0131kReisArmedRun-export_8": -314238810
+      "B\u0131y\u0131kReisArmedRun-export_9": -1297170009
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
