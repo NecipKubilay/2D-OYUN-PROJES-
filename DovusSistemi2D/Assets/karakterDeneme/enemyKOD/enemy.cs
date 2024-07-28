@@ -162,7 +162,7 @@ public class enemy : MonoBehaviour
         saldýrýyor = true;
 
 
-        if (enemyAttack.Instance.canMove)
+        if (enemyAttak.Instance.canMove)
         {
             anim.SetBool("isWalking", true);
 
@@ -191,11 +191,11 @@ public class enemy : MonoBehaviour
             //}
 
         }
-        else
+        if (!enemyAttak.Instance.canMove)
         {
             anim.SetBool("isWalking", false);
-            
         }
+        
 
     }
 
@@ -225,7 +225,7 @@ public class enemy : MonoBehaviour
             if (lazer.collider.CompareTag("Player"))
             {
                 Debug.Log("Lazer, " + nesneIsmi + " nesnesine çarptý!");
-                Debug.Log("31 seksi seksi sikiþ sokuþ");
+                
                 SaldýrýModu();
             }
 
@@ -268,7 +268,7 @@ public class enemy : MonoBehaviour
     {
         saldýrýyor = false;
 
-        if (enemyAttack.Instance.canMove)
+        if (enemyAttak.Instance.canMove)
         {
             anim.SetBool("isWalking", true);
 

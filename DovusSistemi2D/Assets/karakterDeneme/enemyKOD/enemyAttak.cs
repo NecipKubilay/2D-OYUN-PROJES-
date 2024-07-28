@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
 
-public class enemyAttack : MonoBehaviour
+public class enemyAttak : MonoBehaviour
 {
 
 
@@ -43,7 +43,7 @@ public class enemyAttack : MonoBehaviour
 
     Rigidbody2D rb;
 
-    public static enemyAttack Instance { get; private set; }
+    public static enemyAttak Instance { get; private set; }
 
 
     private void Awake()
@@ -145,6 +145,7 @@ public class enemyAttack : MonoBehaviour
     IEnumerator Saldýrý()
     {
         canMove = false;
+        canAttack = false;
         sayac++;
 
         if (sayac == 1)
@@ -164,16 +165,22 @@ public class enemyAttack : MonoBehaviour
 
 
 
-        canAttack = false;
 
 
-        Debug.Log("player hp: " + Hareket.Instance.currentHp);
-        
         if (playerAttack.instance.savundumu)
         {
             StartCoroutine(Toparlan());
         }
-        yield return new WaitForSeconds(cooldownTime);
+        if (!playerAttack.instance.savundumu)
+        {
+            yield return new WaitForSeconds(cooldownTime);
+
+            canAttack = true;
+            canMove = true;
+        }
+        
+        
+        
     }
 
     //rb.AddForce(transform.right* lungeForce);
