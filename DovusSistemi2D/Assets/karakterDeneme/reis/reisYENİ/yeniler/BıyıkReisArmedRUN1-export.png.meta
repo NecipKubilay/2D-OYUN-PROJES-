@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4871e48eb97dd404b81b2bc52ec4670c
+guid: f3cd12962f2f94e4daa1feba2aecec2a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite-0001-export_0
+      name: "B\u0131y\u0131kReisArmedRUN1-export_0"
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75432f73584ad33498716a4ee24954d3
-      internalID: -482431171
+      spriteID: 391be395cb2c95c4fb8fc272f7ec0c02
+      internalID: -279897009
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-0001-export_1
+      name: "B\u0131y\u0131kReisArmedRUN1-export_1"
       rect:
         serializedVersion: 2
         x: 640
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66eb22c3400fa8742b038a55f310ec66
-      internalID: 1217704303
+      spriteID: eacc7b448cf4a924d88c19e6b0c5096c
+      internalID: 444369156
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-0001-export_2
+      name: "B\u0131y\u0131kReisArmedRUN1-export_2"
       rect:
         serializedVersion: 2
         x: 1280
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 773cebabe55f9704bb98363771d4cb89
-      internalID: 2011956981
+      spriteID: cb9f1d6f6af15924480f60d998f98c57
+      internalID: 1949610727
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-0001-export_3
+      name: "B\u0131y\u0131kReisArmedRUN1-export_3"
       rect:
         serializedVersion: 2
         x: 0
@@ -187,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 136ef04cbca6bbc4dacf5ef6daa84469
-      internalID: 1452265946
+      spriteID: 7052354c65e8dd74c9476df6392f6691
+      internalID: -1728649310
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-0001-export_4
+      name: "B\u0131y\u0131kReisArmedRUN1-export_4"
       rect:
         serializedVersion: 2
         x: 640
@@ -208,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7255826da4eeb124190947922bcea7a4
-      internalID: 249195982
+      spriteID: aff09bd4701fc274c942f7bc1eed7789
+      internalID: -1904361944
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-0001-export_5
+      name: "B\u0131y\u0131kReisArmedRUN1-export_5"
       rect:
         serializedVersion: 2
         x: 1280
@@ -229,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a732a3393ca19c0418bf6b8f3649286e
-      internalID: 2129119599
+      spriteID: 720d2c094d378d5428044bfd88fb9a6c
+      internalID: -273626779
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite-0001-export_6
+      name: "B\u0131y\u0131kReisArmedRUN1-export_6"
       rect:
         serializedVersion: 2
         x: 0
@@ -250,29 +250,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31ba8eda8bf7d4149aade0fd63499c50
-      internalID: -1566755436
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite-0001-export_7
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 0
-        width: 640
-        height: 640
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 724694af037d01a4387fc2fe40e616a4
-      internalID: -1089439144
+      spriteID: da696345af5426b469cc4ab77ab66fdf
+      internalID: -1690989014
       vertices: []
       indices: 
       edges: []
@@ -288,14 +267,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Sprite-0001-export_0: -482431171
-      Sprite-0001-export_1: 1217704303
-      Sprite-0001-export_2: 2011956981
-      Sprite-0001-export_3: 1452265946
-      Sprite-0001-export_4: 249195982
-      Sprite-0001-export_5: 2129119599
-      Sprite-0001-export_6: -1566755436
-      Sprite-0001-export_7: -1089439144
+      "B\u0131y\u0131kReisArmedRUN1-export_0": -279897009
+      "B\u0131y\u0131kReisArmedRUN1-export_1": 444369156
+      "B\u0131y\u0131kReisArmedRUN1-export_2": 1949610727
+      "B\u0131y\u0131kReisArmedRUN1-export_3": -1728649310
+      "B\u0131y\u0131kReisArmedRUN1-export_4": -1904361944
+      "B\u0131y\u0131kReisArmedRUN1-export_5": -273626779
+      "B\u0131y\u0131kReisArmedRUN1-export_6": -1690989014
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

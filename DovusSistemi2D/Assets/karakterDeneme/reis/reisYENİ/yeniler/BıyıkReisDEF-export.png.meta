@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f86808e1311395640a7bfff47019de39
+guid: b85682cfa5182ac4e976a2cc2e922b94
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ReisYenisAttack1-export_0
+      name: "B\u0131y\u0131kReisDEF-export_0"
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 252e5ad96fd244b45b54c44bf2649a34
-      internalID: 590995306
+      spriteID: 884c35a41a8e19f4da49cd84e856062d
+      internalID: 514246454
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ReisYenisAttack1-export_1
+      name: "B\u0131y\u0131kReisDEF-export_1"
       rect:
         serializedVersion: 2
         x: 640
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: acb5fc5ccbde70749a92a88dfe0133bb
-      internalID: 747954540
+      spriteID: af82ea18dee5d044fb9bc0090a8c26f8
+      internalID: -1096454564
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ReisYenisAttack1-export_2
+      name: "B\u0131y\u0131kReisDEF-export_2"
       rect:
         serializedVersion: 2
         x: 1280
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8930c1ec5697da409f6a9414b7c53b0
-      internalID: 1847079204
+      spriteID: ee27444ad8e3cf34f921e38d4274f5b7
+      internalID: -191973404
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ReisYenisAttack1-export_3
+      name: "B\u0131y\u0131kReisDEF-export_3"
       rect:
         serializedVersion: 2
         x: 0
@@ -187,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7deef7a91a9be11488489a4ab6375e3c
-      internalID: -744206551
+      spriteID: d602f54bd74b46b49a5d5150329586f5
+      internalID: 582985034
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ReisYenisAttack1-export_4
+      name: "B\u0131y\u0131kReisDEF-export_4"
       rect:
         serializedVersion: 2
         x: 640
@@ -208,29 +208,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a0285a9c6c226d46adb91036db6966c
-      internalID: 568203413
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ReisYenisAttack1-export_5
-      rect:
-        serializedVersion: 2
-        x: 1280
-        y: 0
-        width: 640
-        height: 640
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e2b6c7bf04e70104394578154d937c2c
-      internalID: -1454581379
+      spriteID: 04885b59c21d58b44bb6ca83a3158881
+      internalID: 891646226
       vertices: []
       indices: 
       edges: []
@@ -246,12 +225,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ReisYenisAttack1-export_0: 590995306
-      ReisYenisAttack1-export_1: 747954540
-      ReisYenisAttack1-export_2: 1847079204
-      ReisYenisAttack1-export_3: -744206551
-      ReisYenisAttack1-export_4: 568203413
-      ReisYenisAttack1-export_5: -1454581379
+      "B\u0131y\u0131kReisDEF-export_0": 514246454
+      "B\u0131y\u0131kReisDEF-export_1": -1096454564
+      "B\u0131y\u0131kReisDEF-export_2": -191973404
+      "B\u0131y\u0131kReisDEF-export_3": 582985034
+      "B\u0131y\u0131kReisDEF-export_4": 891646226
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

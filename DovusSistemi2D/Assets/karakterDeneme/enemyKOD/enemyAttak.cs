@@ -16,7 +16,7 @@ public class enemyAttak : MonoBehaviour
     float distanceToPlayer;
     Animator anim;
 
-    float cooldownTime = 1.5f;
+    float cooldownTime = 2f;
     private float saldýrýZaman = 1.5f;
 
     private float lastAttackTime = 0.0f;
@@ -170,13 +170,14 @@ public class enemyAttak : MonoBehaviour
         if (playerAttack.instance.savundumu)
         {
             StartCoroutine(Toparlan());
+            
         }
         if (!playerAttack.instance.savundumu)
         {
-            yield return new WaitForSeconds(cooldownTime);
+            yield return new WaitForSeconds(2f);
 
-            canAttack = true;
             canMove = true;
+            canAttack= true;
         }
         
         
@@ -187,19 +188,7 @@ public class enemyAttak : MonoBehaviour
 
 
 
-    IEnumerator efektSolma()
-    {
-        yield return new WaitForSeconds(0.15f);
-        DestroyImmediate(vurusEfektClone, true);
-
-    }
-
-    IEnumerator efektDEFSolma()
-    {
-        yield return new WaitForSeconds(0.40f);
-        DestroyImmediate(defClone, true);
-
-    }
+    
     public void HASARVER()
     {
 
@@ -224,7 +213,7 @@ public class enemyAttak : MonoBehaviour
             canMove = false;
             canAttack = false;
             StartCoroutine(efektDEFSolma());
-            //StartCoroutine(Toparlan());
+            
         }
 
     }
@@ -235,6 +224,25 @@ public class enemyAttak : MonoBehaviour
         
         canMove = true;
         canAttack = true;
+
+    }
+
+
+
+    IEnumerator efektSolma()
+    {
+        yield return new WaitForSeconds(0.15f);
+        DestroyImmediate(vurusEfektClone, true);
+
+    }
+
+
+
+
+    IEnumerator efektDEFSolma()
+    {
+        yield return new WaitForSeconds(0.40f);
+        DestroyImmediate(defClone, true);
 
     }
 }

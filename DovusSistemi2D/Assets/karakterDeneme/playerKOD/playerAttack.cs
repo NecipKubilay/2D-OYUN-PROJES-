@@ -13,7 +13,7 @@ public class playerAttack : MonoBehaviour
     public int attackDamage = 20;
 
     public bool savundumu;
-
+    public bool SAVUNABÝLÝRMÝ = true;
 
     float attackTimer = 0.0f;
     public bool atakTamamlandi = true;
@@ -49,17 +49,28 @@ public class playerAttack : MonoBehaviour
 
 
 
-        //--------------------------------------------------
+        //----------------------SAVUNMA----------------------------
 
-        Savunma();
+        if (Input.GetKeyDown(KeyCode.Y) && SAVUNABÝLÝRMÝ)
+        {
+            anim.SetTrigger("def");
+            savundumu = true;
+            SAVUNABÝLÝRMÝ = false;
+            Hareket.Instance.canMove = false;
 
-        //--------------------------------------------------
+            StartCoroutine(EnableWalkAfterDEF());
+            StartCoroutine(tekrarDEF());
+        }
+
+        //---------------------SALDIRI-----------------------------
 
 
         attackTimer += Time.deltaTime;
         
         if (Input.GetKeyDown(KeyCode.T) && attackTimer > 0.2f && Hareket.Instance.canMove)
         {
+            SAVUNABÝLÝRMÝ = false;
+
             sayac++;
 
             if (sayac == 1)
@@ -78,7 +89,7 @@ public class playerAttack : MonoBehaviour
                 anim.SetTrigger("atak3");
                 sayac = 0;
             }
-
+            StartCoroutine(tekrarDEF());
             attackTimer = 0.0f;
         }
         //--------------------------------------------------
@@ -126,19 +137,19 @@ public class playerAttack : MonoBehaviour
         StartCoroutine(EnableWalkAfterAttack());
     }
 
-    void Savunma()
-    {
-        if (Input.GetKeyDown(KeyCode.Y))
-        {
-            anim.SetTrigger("def");
-            savundumu = true;
-            Hareket.Instance.canMove = false;
+    //void Savunma()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.Y))
+    //    {
+    //        anim.SetTrigger("def");
+    //        savundumu = true;
+    //        Hareket.Instance.canMove = false;
 
-            StartCoroutine(EnableWalkAfterDEF());
-        }
+    //        StartCoroutine(EnableWalkAfterDEF());
+    //    }
         
 
-    }
+    //}
 
 
 
@@ -184,6 +195,12 @@ public class playerAttack : MonoBehaviour
         Hareket.Instance.canMove = true;
         savundumu = false;
         
+    }
 
+
+    IEnumerator tekrarDEF()
+    {
+        yield return new WaitForSeconds(2f);
+        SAVUNABÝLÝRMÝ = true;
     }
 }

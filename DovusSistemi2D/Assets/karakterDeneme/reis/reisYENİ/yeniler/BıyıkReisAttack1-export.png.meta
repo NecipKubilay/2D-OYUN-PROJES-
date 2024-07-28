@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ee8209a22fea52d499c8b778de3a7669
+guid: e60631ab44548a443a185804a3398abc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -114,6 +114,69 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83e6213d7c44cf247a1a23d2a872d593
+      internalID: 1422982062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "B\u0131y\u0131kReisAttack1-export_1"
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a9863a054659654c9f2616dab27b5bb
+      internalID: -7922185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "B\u0131y\u0131kReisAttack1-export_2"
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3afa9092340a93649919c38e10f9ce71
+      internalID: 2022606024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "B\u0131y\u0131kReisAttack1-export_3"
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 640
         width: 640
         height: 640
@@ -124,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22f1afd9d580e8d419a632050b253af7
-      internalID: 1379105810
+      spriteID: eda3e30103b49734283600710eb7ee69
+      internalID: 971643820
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "B\u0131y\u0131kReisAttack1-export_1"
+      name: "B\u0131y\u0131kReisAttack1-export_4"
       rect:
         serializedVersion: 2
         x: 640
@@ -145,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9781a034e355e664c89a904785646670
-      internalID: -750775185
+      spriteID: 08fe61f3bd46ef64ba0fd8aac66d233a
+      internalID: -571641016
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "B\u0131y\u0131kReisAttack1-export_2"
+      name: "B\u0131y\u0131kReisAttack1-export_5"
       rect:
         serializedVersion: 2
         x: 1280
@@ -166,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14ab5222206a65e4aba6f7d0070a3125
-      internalID: -636691051
+      spriteID: 622f40fc7945a11448e7e5932c6c0b67
+      internalID: 1659413231
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "B\u0131y\u0131kReisAttack1-export_3"
+      name: "B\u0131y\u0131kReisAttack1-export_6"
       rect:
         serializedVersion: 2
         x: 0
@@ -187,50 +250,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1378883d272a8ef44be082c092c6074f
-      internalID: 1463592866
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "B\u0131y\u0131kReisAttack1-export_4"
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 0
-        width: 640
-        height: 640
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e713f88315f6efb4092a918f91115814
-      internalID: -721439610
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "B\u0131y\u0131kReisAttack1-export_5"
-      rect:
-        serializedVersion: 2
-        x: 1280
-        y: 0
-        width: 640
-        height: 640
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fbdf431425121d84f95875d5762fce15
-      internalID: -1767146451
+      spriteID: 69b5483e3ee030d42825f894a36783e2
+      internalID: -845261019
       vertices: []
       indices: 
       edges: []
@@ -246,12 +267,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "B\u0131y\u0131kReisAttack1-export_0": 1379105810
-      "B\u0131y\u0131kReisAttack1-export_1": -750775185
-      "B\u0131y\u0131kReisAttack1-export_2": -636691051
-      "B\u0131y\u0131kReisAttack1-export_3": 1463592866
-      "B\u0131y\u0131kReisAttack1-export_4": -721439610
-      "B\u0131y\u0131kReisAttack1-export_5": -1767146451
+      "B\u0131y\u0131kReisAttack1-export_0": 1422982062
+      "B\u0131y\u0131kReisAttack1-export_1": -7922185
+      "B\u0131y\u0131kReisAttack1-export_2": 2022606024
+      "B\u0131y\u0131kReisAttack1-export_3": 971643820
+      "B\u0131y\u0131kReisAttack1-export_4": -571641016
+      "B\u0131y\u0131kReisAttack1-export_5": 1659413231
+      "B\u0131y\u0131kReisAttack1-export_6": -845261019
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

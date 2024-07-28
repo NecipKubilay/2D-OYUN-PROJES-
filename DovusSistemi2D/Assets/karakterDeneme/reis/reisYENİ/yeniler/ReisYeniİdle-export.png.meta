@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f266804a092ee2c4b9e8bc04123f3c83
+guid: d8cd0f7eee2179445a0ae16755f28de8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -113,7 +113,7 @@ TextureImporter:
       name: "ReisYeni\u0130dle-export_0"
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 0
         width: 640
         height: 640
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 537313b76464e354c914abd3745e0e83
-      internalID: 1399104748
+      spriteID: b6031af13faf0ff4ba68f2b36d43171d
+      internalID: -1374623667
       vertices: []
       indices: 
       edges: []
@@ -145,8 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d3e07b058f849945a1a9b2d858f361a
-      internalID: 1039639338
+      spriteID: 9a84de5447f8f0743ad07ff0571d1c6d
+      internalID: -569416701
       vertices: []
       indices: 
       edges: []
@@ -162,8 +162,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "ReisYeni\u0130dle-export_0": 1399104748
-      "ReisYeni\u0130dle-export_1": 1039639338
+      "ReisYeni\u0130dle-export_0": -1374623667
+      "ReisYeni\u0130dle-export_1": -569416701
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

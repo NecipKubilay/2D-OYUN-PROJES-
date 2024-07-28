@@ -137,15 +137,15 @@ public class enemy : MonoBehaviour
             }
         }
 
-        if (oldumu)
-        {
-            collider.isTrigger = true;
-            rb.simulated = false;
+        //if (oldumu)
+        //{
+        //    collider.isTrigger = true;
+        //    rb.simulated = false;
 
             
 
-            return;
-        }
+        //    return;
+        //}
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -245,22 +245,7 @@ public class enemy : MonoBehaviour
     }
 
 
-    //private void OnDrawGizmos()
-    //{
-
-
-    //    if (transform.localScale.x < 0)
-    //    {
-    //        DusmanBakýsYonu = -transform.right;
-    //    }
-    //    else
-    //    {
-    //        DusmanBakýsYonu = transform.right;
-    //    }
-
-
-    //    Gizmos.DrawLine(transform.position, transform.position + DusmanBakýsYonu * gorusAlaniUzunlugu);
-    //}
+    
 
 
 
@@ -307,17 +292,7 @@ public class enemy : MonoBehaviour
 
     }
 
-    //void Flip()
-    //{
-    //    if (target.position.x> transform.position.x)
-    //    {
-    //        transform.localScale = new Vector3(-1, 1, 1);
-    //    }
-    //    else if (target.position.x < transform.position.x)
-    //    {
-    //        transform.localScale = new Vector3(1, 1, 1);
-    //    }
-    //}
+    
 
 
     public bool oldumu;
@@ -327,8 +302,11 @@ public class enemy : MonoBehaviour
         Debug.Log(currentHp);
 
 
-
-        anim.SetTrigger("HURT");
+        if (currentHp > 0)
+        {
+            anim.SetTrigger("HURT");
+        }
+        
         if (currentHp <= 0)
         {
             // Nesneyi yok etmek yerine, canýný 0'a ayarlayýn.
@@ -342,6 +320,8 @@ public class enemy : MonoBehaviour
 
     void OnDeath()
     {
+        collider.isTrigger = true;
+        rb.simulated = false;
         anim.SetTrigger("DEATH");
         Destroy(this.gameObject, 2f);
         //Destroy(this.gameObject);
