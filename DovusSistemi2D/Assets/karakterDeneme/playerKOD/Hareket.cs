@@ -289,18 +289,19 @@ public class Hareket : MonoBehaviour
     {
         currentHp = currentHp - damage;
         canMove = false;
-        if (transform.localScale.x < 0)
+        if(enemyAttak.Instance.transform.localScale.x < 0)
+        {
+            Vector2 force = new Vector2(-2000, 0);
+            rb.AddForce(force);
+        }
+        if (enemyAttak.Instance.transform.localScale.x > 0)
         {
 
             Vector2 force = new Vector2(2000, 0);
             rb.AddForce(force);
 
         }
-        if (transform.localScale.x > 0)
-        {
-            Vector2 force = new Vector2(-2000, 0);
-            rb.AddForce(force);
-        }
+       
 
         Debug.Log(currentHp);
         if (currentHp <= 0)

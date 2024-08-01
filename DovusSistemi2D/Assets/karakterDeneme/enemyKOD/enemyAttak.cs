@@ -7,41 +7,57 @@ using UnityEngine;
 public class enemyAttak : MonoBehaviour
 {
 
-
+    //-------------------GENEL SEYLER---------------------------
     public GameObject dusmanBakýsNoktasý;
     Vector3 DusmanBakýsYonu;
 
     public GameObject player;
-    public float range = 5f;
-    float distanceToPlayer;
+
+
+    public float range;
+    public float distanceToPlayer;
+
+    Rigidbody2D rb;
     Animator anim;
+
+    public LayerMask playerLayers;
+
+
+    public Transform attackPoint;
+    public int attackDamage = 20;
+    public float attackRange = 1f;
+
+
 
     float cooldownTime = 2f;
     private float saldýrýZaman = 1.5f;
 
     private float lastAttackTime = 0.0f;
 
-    bool canAttack = true;
-    float lungeForce = 10f;
-    public bool canMove = true;
+    public bool canAttack = true;
+    //-------------------------------------------------------------
 
+
+    
 
     int sayac = 0;
 
 
-    public LayerMask playerLayers;
-
+    
+    //-----------------------EFEKTLER(vurus,defense vb)------------------------------
     public GameObject defPrefab;
     GameObject defClone;
-
     public GameObject vurusEfektPrefab;
     GameObject vurusEfektClone;
-    public Transform attackPoint;
-    public int attackDamage = 20;
-    public float attackRange = 1f;
+    //-------------------------------------------------------------
 
 
-    Rigidbody2D rb;
+
+
+    
+
+
+    
 
     public static enemyAttak Instance { get; private set; }
 
@@ -67,6 +83,9 @@ public class enemyAttak : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+
+
 
         if (transform.localScale.x < 0)
         {
@@ -78,7 +97,7 @@ public class enemyAttak : MonoBehaviour
         }
 
 
-        distanceToPlayer = Vector2.Distance(transform.position, player.transform.position);
+        distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
 
         //RaycastHit2D lazer = Physics2D.Raycast(dusmanBakýsNoktasý.transform.position, DusmanBakýsYonu, 20f);
         //if (lazer.collider != null)
@@ -102,6 +121,14 @@ public class enemyAttak : MonoBehaviour
 
         //}
 
+        if (distanceToPlayer <= range)
+        {
+            Debug.Log("porno");
+        }
+
+
+
+
         if (!enemy.Instance.oldumu)
         {
             if (distanceToPlayer <= range && canAttack && enemy.Instance.saldýrýyor)
@@ -110,7 +137,7 @@ public class enemyAttak : MonoBehaviour
                 float timeSinceLastAttack = Time.time - lastAttackTime;
                 if (timeSinceLastAttack >= saldýrýZaman)
                 {
-
+                    
                     StartCoroutine(Saldýrý());
 
                     lastAttackTime = Time.time;
@@ -144,7 +171,7 @@ public class enemyAttak : MonoBehaviour
 
     IEnumerator Saldýrý()
     {
-        canMove = false;
+        enemy.Instance.canMove = false;
         canAttack = false;
         sayac++;
 
@@ -176,7 +203,7 @@ public class enemyAttak : MonoBehaviour
         {
             yield return new WaitForSeconds(2f);
 
-            canMove = true;
+            enemy.Instance.canMove = true;
             canAttack= true;
         }
         
@@ -184,7 +211,7 @@ public class enemyAttak : MonoBehaviour
         
     }
 
-    //rb.AddForce(transform.right* lungeForce);
+    
 
 
 
@@ -210,7 +237,7 @@ public class enemyAttak : MonoBehaviour
         {
             anim.SetTrigger("stun");
             defClone = Instantiate(defPrefab, this.transform);
-            canMove = false;
+            enemy.Instance.canMove = false;
             canAttack = false;
             StartCoroutine(efektDEFSolma());
             
@@ -221,8 +248,8 @@ public class enemyAttak : MonoBehaviour
     IEnumerator Toparlan()
     {
         yield return new WaitForSeconds(2f);
-        
-        canMove = true;
+
+        enemy.Instance.canMove = true;
         canAttack = true;
 
     }
@@ -245,4 +272,8 @@ public class enemyAttak : MonoBehaviour
         DestroyImmediate(defClone, true);
 
     }
+
+
+
+    
 }

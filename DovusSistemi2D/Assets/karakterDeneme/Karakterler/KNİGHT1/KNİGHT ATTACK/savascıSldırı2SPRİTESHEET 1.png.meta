@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d296ef8d2e117df4481587a3e5a19d03
+guid: 2052e61b441859b49b9cf481bdfd47c5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "savasc\u0131Sld\u0131r\u01312SPR\u0130TESHEET_0"
+      name: "savasc\u0131Sld\u0131r\u01312SPR\u0130TESHEET 1_0"
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7cb7bd158325e7e498f0bbf1237f7e70
-      internalID: 1640567236
+      spriteID: 8fa21f7bdf671a94f82b8d36e21662bc
+      internalID: 1989578872
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "savasc\u0131Sld\u0131r\u01312SPR\u0130TESHEET_1"
+      name: "savasc\u0131Sld\u0131r\u01312SPR\u0130TESHEET 1_1"
       rect:
         serializedVersion: 2
         x: 640
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d344cb50ab6d930409ea0fc506a6bf0e
-      internalID: -547345653
+      spriteID: 08c66ba9c9ce1f543a8e2a79ce20be13
+      internalID: 815961327
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "savasc\u0131Sld\u0131r\u01312SPR\u0130TESHEET_2"
+      name: "savasc\u0131Sld\u0131r\u01312SPR\u0130TESHEET 1_2"
       rect:
         serializedVersion: 2
         x: 1280
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b246af1e507882146a03d7c595a04629
-      internalID: 521797741
+      spriteID: eb333d0fe53525f4ebf9de5841e416c6
+      internalID: 2026234362
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "savasc\u0131Sld\u0131r\u01312SPR\u0130TESHEET_3"
+      name: "savasc\u0131Sld\u0131r\u01312SPR\u0130TESHEET 1_3"
       rect:
         serializedVersion: 2
         x: 0
@@ -187,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bef555a3a6256d44fbe82b49cf35046a
-      internalID: -300737894
+      spriteID: 80e54caa0b2faf146a9821dd261e78ec
+      internalID: 208448932
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "savasc\u0131Sld\u0131r\u01312SPR\u0130TESHEET_4"
+      name: "savasc\u0131Sld\u0131r\u01312SPR\u0130TESHEET 1_4"
       rect:
         serializedVersion: 2
         x: 640
@@ -208,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b73ee78bc88cf24d9493ac6870866b8
-      internalID: -697653883
+      spriteID: 360745da5bb986d4cbca77271a5f9e81
+      internalID: -377190625
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "savasc\u0131Sld\u0131r\u01312SPR\u0130TESHEET_5"
+      name: "savasc\u0131Sld\u0131r\u01312SPR\u0130TESHEET 1_5"
       rect:
         serializedVersion: 2
         x: 1280
@@ -229,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 455c7e7c7324e524e91b4cf7b044df2a
-      internalID: -328865346
+      spriteID: 16c7f81ecad9a62459d0f8305f8e3878
+      internalID: -1776210675
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "savasc\u0131Sld\u0131r\u01312SPR\u0130TESHEET_6"
+      name: "savasc\u0131Sld\u0131r\u01312SPR\u0130TESHEET 1_6"
       rect:
         serializedVersion: 2
         x: 0
@@ -250,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1fb361eec0f0f643885092c1a3c1b45
-      internalID: -780710425
+      spriteID: 416a482c0c26dc949af0a060289c4998
+      internalID: -1108311877
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "savasc\u0131Sld\u0131r\u01312SPR\u0130TESHEET_7"
+      name: "savasc\u0131Sld\u0131r\u01312SPR\u0130TESHEET 1_7"
       rect:
         serializedVersion: 2
         x: 640
@@ -271,29 +271,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40e203445f8516540a7cbc3893b166e3
-      internalID: 52772016
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "savasc\u0131Sld\u0131r\u01312SPR\u0130TESHEET_8"
-      rect:
-        serializedVersion: 2
-        x: 1280
-        y: 0
-        width: 640
-        height: 640
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a8ae69278b195be4ab52ccd6acb38e9d
-      internalID: -2130133534
+      spriteID: a6f32089467299f4d94556b1dffd4681
+      internalID: 788205514
       vertices: []
       indices: 
       edges: []
@@ -309,15 +288,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "savasc\u0131Sld\u0131r\u01312SPR\u0130TESHEET_0": 1640567236
-      "savasc\u0131Sld\u0131r\u01312SPR\u0130TESHEET_1": -547345653
-      "savasc\u0131Sld\u0131r\u01312SPR\u0130TESHEET_2": 521797741
-      "savasc\u0131Sld\u0131r\u01312SPR\u0130TESHEET_3": -300737894
-      "savasc\u0131Sld\u0131r\u01312SPR\u0130TESHEET_4": -697653883
-      "savasc\u0131Sld\u0131r\u01312SPR\u0130TESHEET_5": -328865346
-      "savasc\u0131Sld\u0131r\u01312SPR\u0130TESHEET_6": -780710425
-      "savasc\u0131Sld\u0131r\u01312SPR\u0130TESHEET_7": 52772016
-      "savasc\u0131Sld\u0131r\u01312SPR\u0130TESHEET_8": -2130133534
+      "savasc\u0131Sld\u0131r\u01312SPR\u0130TESHEET 1_0": 1989578872
+      "savasc\u0131Sld\u0131r\u01312SPR\u0130TESHEET 1_1": 815961327
+      "savasc\u0131Sld\u0131r\u01312SPR\u0130TESHEET 1_2": 2026234362
+      "savasc\u0131Sld\u0131r\u01312SPR\u0130TESHEET 1_3": 208448932
+      "savasc\u0131Sld\u0131r\u01312SPR\u0130TESHEET 1_4": -377190625
+      "savasc\u0131Sld\u0131r\u01312SPR\u0130TESHEET 1_5": -1776210675
+      "savasc\u0131Sld\u0131r\u01312SPR\u0130TESHEET 1_6": -1108311877
+      "savasc\u0131Sld\u0131r\u01312SPR\u0130TESHEET 1_7": 788205514
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

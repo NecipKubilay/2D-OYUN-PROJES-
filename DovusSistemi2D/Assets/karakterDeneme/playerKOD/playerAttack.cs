@@ -8,7 +8,7 @@ public class playerAttack : MonoBehaviour
     Animator anim;
 
     public Transform attackPoint;
-    public float attackRange = 1f;
+    public float attackRange = 5f;
     public LayerMask enemyLayers;
     public int attackDamage = 20;
 
@@ -175,12 +175,12 @@ public class playerAttack : MonoBehaviour
     IEnumerator EnableWalkAfterAttack()
     {
         // Saldýrý animasyonunun süresini bekleyin
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.15f);
 
         // Yürüyüþü tekrar etkinleþtir
 
         Hareket.Instance.canMove = true;
-        savundumu = false;
+        
         
 
     }
@@ -200,7 +200,7 @@ public class playerAttack : MonoBehaviour
 
     IEnumerator tekrarDEF()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1.5f);
         SAVUNABÝLÝRMÝ = true;
     }
 }

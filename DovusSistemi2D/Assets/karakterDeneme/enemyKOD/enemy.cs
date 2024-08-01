@@ -18,6 +18,9 @@ public class enemy : MonoBehaviour
     public bool saldýrýyor;
     public bool dokundu;
 
+    public bool canMove = true;
+
+
     public GameObject player;
 
     public Transform target;
@@ -39,7 +42,7 @@ public class enemy : MonoBehaviour
     Vector3 DusmanBakýsYonu;
     public GameObject dusmanBakýsNoktasý;
 
-
+    bool gordumu;
     //-------------------------------------
 
     public static enemy Instance { get; private set; }
@@ -71,7 +74,7 @@ public class enemy : MonoBehaviour
         //Vector3 pointA1 = new Vector3(-1, transform.position.y, transform.position.z);
         //Vector3 pointA2 = new Vector3(3, transform.position.y, transform.position.z);
 
-            
+
 
 
         target = pointA.transform;
@@ -83,6 +86,9 @@ public class enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
+
         if (!oldumu)
         {
 
@@ -97,7 +103,9 @@ public class enemy : MonoBehaviour
                     DusmanBakýsYonu = transform.right;
                 }
 
-                RaycastHit2D lazer = Physics2D.Raycast(dusmanBakýsNoktasý.transform.position, DusmanBakýsYonu, 20f);
+                int katmanMask = LayerMask.GetMask("player");
+
+                RaycastHit2D lazer = Physics2D.Raycast(dusmanBakýsNoktasý.transform.position, DusmanBakýsYonu, 20f, katmanMask);
                 if (lazer.collider != null)
                 {
                     if (lazer.collider.gameObject.CompareTag("Player"))
@@ -142,7 +150,7 @@ public class enemy : MonoBehaviour
         //    collider.isTrigger = true;
         //    rb.simulated = false;
 
-            
+
 
         //    return;
         //}
@@ -154,7 +162,7 @@ public class enemy : MonoBehaviour
             dokundu = true;
         }
     }
-    
+
 
 
     void SaldýrýModu()
@@ -162,7 +170,7 @@ public class enemy : MonoBehaviour
         saldýrýyor = true;
 
 
-        if (enemyAttak.Instance.canMove)
+        if (canMove)
         {
             anim.SetBool("isWalking", true);
 
@@ -191,61 +199,51 @@ public class enemy : MonoBehaviour
             //}
 
         }
-        if (!enemyAttak.Instance.canMove)
+        if (!canMove)
         {
             anim.SetBool("isWalking", false);
         }
-        
-
-    }
-
-
-
-    bool gordumu;
-    void gorusAlani()
-    {
-
-
-        if (transform.localScale.x < 0)
-        {
-            DusmanBakýsYonu = -transform.right;
-        }
-        else
-        {
-            DusmanBakýsYonu = transform.right;
-        }
-
-        Vector3 endPos = transform.position + Vector3.right, gorusAlaniUzunlugu;
-        RaycastHit2D lazer = Physics2D.Raycast(transform.position, transform.right, 5f);
-
-
-        if (lazer.collider != null)
-        {
-            string nesneIsmi = lazer.collider.gameObject.name;
-            if (lazer.collider.CompareTag("Player"))
-            {
-                Debug.Log("Lazer, " + nesneIsmi + " nesnesine çarptý!");
-                
-                SaldýrýModu();
-            }
-
-            Devriye();
-        }
-
-
-
-
-
-
-
-
-
 
 
     }
 
 
-    
+
+
+    //void gorusAlani()
+    //{
+
+
+    //    if (transform.localScale.x < 0)
+    //    {
+    //        DusmanBakýsYonu = -transform.right;
+    //    }
+    //    else
+    //    {
+    //        DusmanBakýsYonu = transform.right;
+    //    }
+
+    //    Vector3 endPos = transform.position + Vector3.right, gorusAlaniUzunlugu;
+    //    RaycastHit2D lazer = Physics2D.Raycast(transform.position, transform.right, 5f);
+
+
+    //    if (lazer.collider != null)
+    //    {
+    //        string nesneIsmi = lazer.collider.gameObject.name;
+    //        if (lazer.collider.CompareTag("player"))
+    //        {
+    //            Debug.Log("Lazer, " + nesneIsmi + " nesnesine çarptý!");
+
+    //            SaldýrýModu();
+    //        }
+
+    //        Devriye();
+    //    }
+
+    //}
+
+
+
 
 
 
@@ -253,7 +251,7 @@ public class enemy : MonoBehaviour
     {
         saldýrýyor = false;
 
-        if (enemyAttak.Instance.canMove)
+        if (canMove)
         {
             anim.SetBool("isWalking", true);
 
@@ -292,7 +290,7 @@ public class enemy : MonoBehaviour
 
     }
 
-    
+
 
 
     public bool oldumu;
@@ -302,11 +300,20 @@ public class enemy : MonoBehaviour
         Debug.Log(currentHp);
 
 
+
+        enemyAttak.Instance.canAttack = false;
+        canMove = false;
+
+
+        StartCoroutine(kotektenSonraToparlanma());
+
+
         if (currentHp > 0)
         {
             anim.SetTrigger("HURT");
+
         }
-        
+
         if (currentHp <= 0)
         {
             // Nesneyi yok etmek yerine, canýný 0'a ayarlayýn.
@@ -325,6 +332,16 @@ public class enemy : MonoBehaviour
         anim.SetTrigger("DEATH");
         Destroy(this.gameObject, 2f);
         //Destroy(this.gameObject);
+    }
+
+
+
+    IEnumerator kotektenSonraToparlanma()
+    {
+        yield return new WaitForSeconds(2f);
+
+        enemyAttak.Instance.canAttack = false;
+        canMove = false;
     }
 }
 
