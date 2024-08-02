@@ -21,6 +21,11 @@ public class Hareket : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
 
 
+    public GameObject vurusEfektPrefab;
+    GameObject vurusEfektClone;
+
+
+
 
     public int maxHp = 100;
     public int currentHp = 0;
@@ -301,9 +306,18 @@ public class Hareket : MonoBehaviour
             rb.AddForce(force);
 
         }
-       
 
-        Debug.Log(currentHp);
+
+
+        vurusEfektClone = Instantiate(vurusEfektPrefab, this.transform);
+        StartCoroutine(efektSolma());
+
+        if (currentHp > 0)
+        {
+            anim.SetTrigger("HURT");
+
+        }
+
         if (currentHp <= 0)
         {
             // Nesneyi yok etmek yerine, canýný 0'a ayarlayýn.
@@ -315,6 +329,15 @@ public class Hareket : MonoBehaviour
 
         StartCoroutine(EnableMoveAfterDamage());
     }
+
+
+    IEnumerator efektSolma()
+    {
+        yield return new WaitForSeconds(0.15f);
+        DestroyImmediate(vurusEfektClone, true);
+
+    }
+
 
 
 

@@ -9,7 +9,9 @@ public class okKodu : MonoBehaviour
     public GameObject player;
     public Rigidbody2D rb;
     public float force;
-
+    public int attackDamage;
+    public GameObject vurusEfektPrefab;
+    GameObject vurusEfektClone;
 
     // Start is called before the first frame update
     void Start()
@@ -33,4 +35,22 @@ public class okKodu : MonoBehaviour
     }
 
     
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            //Hareket.Instance.GetComponent<Hareket>().Damage(attackDamage);
+            vurusEfektClone = Instantiate(vurusEfektPrefab, player.transform);
+            StartCoroutine(efektSolma());
+            
+            
+        }
+    }
+
+    IEnumerator efektSolma()
+    {
+        yield return new WaitForSeconds(0.15f);
+        DestroyImmediate(vurusEfektClone, true);
+        Destroy(this.gameObject);
+    }
 }

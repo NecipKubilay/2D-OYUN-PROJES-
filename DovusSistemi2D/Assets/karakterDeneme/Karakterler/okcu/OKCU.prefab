@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5866300998297484226}
   - component: {fileID: 3185819816273149666}
   - component: {fileID: 8710936971484714928}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: OKCU
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -157,6 +157,7 @@ MonoBehaviour:
   "dusmanBak\u0131sNoktas\u0131": {fileID: 8678492511810611319}
   maxHp: 100
   currentHp: 0
+  vurusEfektPrefab: {fileID: 7535314121237883958, guid: ba0e8be73badd3a47a494e76078fd18a, type: 3}
   oldumu: 0
 --- !u!50 &5866300998297484226
 Rigidbody2D:
@@ -218,7 +219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fe0efd071dfef24082ec2ac12ff9ffd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firePoint: {fileID: 0}
+  firePoint: {fileID: 8678492511810611319}
   ArrowPrefab: {fileID: 7602143845241367002, guid: 5ba20236ea1b9624bac91a9c5030a7b6, type: 3}
   canAttack: 1
   range: 20
@@ -233,7 +234,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2009699611955901373}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: "bak\u0131sNoktas\u0131"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -249,7 +250,7 @@ Transform:
   m_GameObject: {fileID: 8678492511810611319}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.73, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -60,6 +60,12 @@ public class enemy : MonoBehaviour
     public int maxHp = 100;
     [SerializeField] int currentHp = 0;
 
+
+
+    public GameObject vurusEfektPrefab;
+    GameObject vurusEfektClone;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -304,7 +310,8 @@ public class enemy : MonoBehaviour
         enemyAttak.Instance.canAttack = false;
         canMove = false;
 
-
+        vurusEfektClone = Instantiate(vurusEfektPrefab, this.transform);
+        StartCoroutine(efektSolma());
         StartCoroutine(kotektenSonraToparlanma());
 
 
@@ -340,9 +347,18 @@ public class enemy : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
 
-        enemyAttak.Instance.canAttack = false;
-        canMove = false;
+        enemyAttak.Instance.canAttack = true;
+        canMove = true;
     }
+
+
+    IEnumerator efektSolma()
+    {
+        yield return new WaitForSeconds(0.15f);
+        DestroyImmediate(vurusEfektClone, true);
+
+    }
+
 }
 
 

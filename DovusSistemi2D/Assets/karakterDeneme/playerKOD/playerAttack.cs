@@ -129,8 +129,8 @@ public class playerAttack : MonoBehaviour
         foreach (var enemy in hitEnemies)
         {
             enemy.GetComponent<enemy>().Damage(attackDamage);
-            vurusEfektClone = Instantiate(vurusEfektPrefab, enemy.transform);
-            StartCoroutine(efektSolma());
+            //vurusEfektClone = Instantiate(vurusEfektPrefab, enemy.transform);
+            //StartCoroutine(efektSolma());
 
             Debug.Log("we hit " + enemy.name);
         }
@@ -164,12 +164,12 @@ public class playerAttack : MonoBehaviour
     }
 
 
-    IEnumerator efektSolma()
-    {
-        yield return new WaitForSeconds(0.15f);
-        DestroyImmediate(vurusEfektClone, true);
+    //IEnumerator efektSolma()
+    //{
+    //    yield return new WaitForSeconds(0.15f);
+    //    DestroyImmediate(vurusEfektClone, true);
 
-    }
+    //}
 
 
     IEnumerator EnableWalkAfterAttack()
