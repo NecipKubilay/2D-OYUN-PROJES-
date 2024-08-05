@@ -51,23 +51,22 @@ public class playerAttack : MonoBehaviour
 
         //----------------------SAVUNMA----------------------------
 
-        if (Input.GetKeyDown(KeyCode.Y) && SAVUNABÝLÝRMÝ)
-        {
-            anim.SetTrigger("def");
-            savundumu = true;
-            SAVUNABÝLÝRMÝ = false;
-            Hareket.Instance.canMove = false;
-
-            StartCoroutine(EnableWalkAfterDEF());
-            StartCoroutine(tekrarDEF());
-        }
+        Savunma();
 
         //---------------------SALDIRI-----------------------------
 
+        Attack();
 
+        //--------------------------------------------------
+
+    }
+
+
+    void Attack()
+    {
         attackTimer += Time.deltaTime;
-        
-        if (Input.GetKeyDown(KeyCode.T) && attackTimer > 0.2f && Hareket.Instance.canMove)
+
+        if (Input.GetKeyDown(KeyCode.T) && attackTimer > 0.3f && Hareket.Instance.canMove)
         {
             SAVUNABÝLÝRMÝ = false;
 
@@ -92,11 +91,10 @@ public class playerAttack : MonoBehaviour
             StartCoroutine(tekrarDEF());
             attackTimer = 0.0f;
         }
-        //--------------------------------------------------
-
     }
 
-    void Attack()
+
+    void HASARVER()
     {
         //if (Input.GetKeyDown(KeyCode.T))
         //{
@@ -137,19 +135,20 @@ public class playerAttack : MonoBehaviour
         StartCoroutine(EnableWalkAfterAttack());
     }
 
-    //void Savunma()
-    //{
-    //    if (Input.GetKeyDown(KeyCode.Y))
-    //    {
-    //        anim.SetTrigger("def");
-    //        savundumu = true;
-    //        Hareket.Instance.canMove = false;
+    void Savunma()
+    {
+        if (Input.GetKeyDown(KeyCode.Y) && SAVUNABÝLÝRMÝ)
+        {
+            anim.SetTrigger("def");
+            savundumu = true;
+            SAVUNABÝLÝRMÝ = false;
+            Hareket.Instance.canMove = false;
 
-    //        StartCoroutine(EnableWalkAfterDEF());
-    //    }
-        
+            StartCoroutine(EnableWalkAfterDEF());
+            StartCoroutine(tekrarDEF());
+        }
 
-    //}
+    }
 
 
 
@@ -175,7 +174,7 @@ public class playerAttack : MonoBehaviour
     IEnumerator EnableWalkAfterAttack()
     {
         // Saldýrý animasyonunun süresini bekleyin
-        yield return new WaitForSeconds(0.15f);
+        yield return new WaitForSeconds(0.25f);
 
         // Yürüyüþü tekrar etkinleþtir
 

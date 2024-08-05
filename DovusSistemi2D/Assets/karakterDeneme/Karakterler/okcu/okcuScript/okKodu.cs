@@ -13,6 +13,18 @@ public class okKodu : MonoBehaviour
     public GameObject vurusEfektPrefab;
     GameObject vurusEfektClone;
 
+
+
+    public static okKodu Instance { get; private set; }
+
+
+    private void Awake()
+    {
+        Instance = this;
+
+    }
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,11 +47,11 @@ public class okKodu : MonoBehaviour
     }
 
     
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            //Hareket.Instance.GetComponent<Hareket>().Damage(attackDamage);
+            Hareket.Instance.GetComponent<Hareket>().Damage(attackDamage);
             vurusEfektClone = Instantiate(vurusEfektPrefab, player.transform);
             StartCoroutine(efektSolma());
             
@@ -53,4 +65,6 @@ public class okKodu : MonoBehaviour
         DestroyImmediate(vurusEfektClone, true);
         Destroy(this.gameObject);
     }
+
+
 }

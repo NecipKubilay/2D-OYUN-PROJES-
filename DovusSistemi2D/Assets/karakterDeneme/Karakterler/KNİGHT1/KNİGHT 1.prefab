@@ -137,11 +137,14 @@ MonoBehaviour:
   pointB: {fileID: 0}
   "sald\u0131r\u0131yor": 0
   dokundu: 0
+  canMove: 1
   player: {fileID: 0}
   target: {fileID: 0}
+  distanceToPlayer: 0
   "dusmanBak\u0131sNoktas\u0131": {fileID: 4286386530961686315}
   maxHp: 100
   currentHp: 0
+  vurusEfektPrefab: {fileID: 7535314121237883958, guid: ba0e8be73badd3a47a494e76078fd18a, type: 3}
   oldumu: 0
 --- !u!61 &6050841495930567946
 BoxCollider2D:
@@ -204,16 +207,15 @@ MonoBehaviour:
   player: {fileID: 0}
   range: 5
   distanceToPlayer: 0
-  canAttack: 1
-  canMove: 1
   playerLayers:
     serializedVersion: 2
     m_Bits: 8
-  defPrefab: {fileID: 3063401847974200350, guid: e2f58a0ea0b9a054ca2e43d61dbe5e87, type: 3}
-  vurusEfektPrefab: {fileID: 7535314121237883958, guid: ba0e8be73badd3a47a494e76078fd18a, type: 3}
   attackPoint: {fileID: 8432387494660782113}
   attackDamage: 20
   attackRange: 2
+  canAttack: 1
+  defPrefab: {fileID: 3063401847974200350, guid: e2f58a0ea0b9a054ca2e43d61dbe5e87, type: 3}
+  vurusEfektPrefab: {fileID: 7535314121237883958, guid: ba0e8be73badd3a47a494e76078fd18a, type: 3}
 --- !u!50 &3375164809760349310
 Rigidbody2D:
   serializedVersion: 4

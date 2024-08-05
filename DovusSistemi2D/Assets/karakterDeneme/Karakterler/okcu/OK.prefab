@@ -151,7 +151,7 @@ MonoBehaviour:
   player: {fileID: 0}
   rb: {fileID: 0}
   force: 30
-  attackDamage: 0
+  attackDamage: 50
   vurusEfektPrefab: {fileID: 7535314121237883958, guid: ba0e8be73badd3a47a494e76078fd18a, type: 3}
 --- !u!61 &354430654212802186
 BoxCollider2D:

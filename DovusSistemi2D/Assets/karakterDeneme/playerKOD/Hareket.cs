@@ -61,23 +61,23 @@ public class Hareket : MonoBehaviour
     {
         Instance = this;
     }
-        // Start is called before the first frame update
-        void Start()
+    // Start is called before the first frame update
+    void Start()
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         currentHp = maxHp;
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
-        
+
         if (Input.GetKeyDown(KeyCode.P))
         {
-            
+
         }
         //-----------------------------------------
 
@@ -133,7 +133,7 @@ public class Hareket : MonoBehaviour
 
             }
         }
-        
+
 
 
         //-----------------------------------------
@@ -151,7 +151,7 @@ public class Hareket : MonoBehaviour
     void FixedUpdate()
     {
         Movement();
-        
+
     }
 
 
@@ -160,7 +160,7 @@ public class Hareket : MonoBehaviour
     {
         //Debug.Log("yere dokundu");
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
-        
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -171,7 +171,7 @@ public class Hareket : MonoBehaviour
             //Debug.Log("karakter yere deydi");
             yerdemi = true;
 
-            
+
         }
     }
 
@@ -190,7 +190,7 @@ public class Hareket : MonoBehaviour
                 transform.localScale = new Vector3(1, 1, 1);
             }
         }
-        
+
     }
 
 
@@ -203,24 +203,24 @@ public class Hareket : MonoBehaviour
             anim.SetTrigger("jump");
             yerdemi = false;
 
-            
+
         }
 
         if (!yerdemi)
         {
             anim.SetBool("run", false);
         }
-        
+
         Debug.Log(isGrounded());
 
         if (isGrounded() == true)
         {
             anim.SetTrigger("yereDokundu");
             Instantiate(yereInmeEfekt, groundCheck.transform.position, Quaternion.identity);
-            
+
         }
     }
-    
+
     IEnumerator Jumping()
     {
         rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
@@ -237,7 +237,7 @@ public class Hareket : MonoBehaviour
         if (yerdemi = true)
         {
             anim.SetTrigger("yereDokundu");
-            
+
         }
     }
     IEnumerator zýplamaZamanAralýgý()
@@ -294,12 +294,12 @@ public class Hareket : MonoBehaviour
     {
         currentHp = currentHp - damage;
         canMove = false;
-        if(enemyAttak.Instance.transform.localScale.x < 0)
+        if (enemy.Instance.transform.localScale.x < 0)
         {
             Vector2 force = new Vector2(-2000, 0);
             rb.AddForce(force);
         }
-        if (enemyAttak.Instance.transform.localScale.x > 0)
+        if (enemy.Instance.transform.localScale.x > 0)
         {
 
             Vector2 force = new Vector2(2000, 0);

@@ -33,7 +33,7 @@ public class enemy : MonoBehaviour
 
     BoxCollider2D collider;
 
-
+    public float distanceToPlayer;
     //float kovalamaRange = 5f;
     //Color gizmoColor = Color.green;
     //float gorusAlaniUzunlugu = 5f;
@@ -151,15 +151,7 @@ public class enemy : MonoBehaviour
             }
         }
 
-        //if (oldumu)
-        //{
-        //    collider.isTrigger = true;
-        //    rb.simulated = false;
-
-
-
-        //    return;
-        //}
+        
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -193,10 +185,19 @@ public class enemy : MonoBehaviour
             Vector3 hedefPozisyon = player.transform.position;
             hedefPozisyon.y = transform.position.y;
 
-            Vector3 directionToPlayer = player.transform.position - transform.position;
-            transform.position = Vector3.MoveTowards(transform.position, hedefPozisyon, runspeed * Time.deltaTime);
+            //Vector3 directionToPlayer = player.transform.position - transform.position;
+            if (distanceToPlayer >= enemyAttak.Instance.range)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, hedefPozisyon, runspeed * Time.deltaTime);
+            }
+            
+            
 
-
+            distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
+            if (distanceToPlayer <= enemyAttak.Instance.range)
+            {
+                anim.SetBool("iswalking", false);
+            }
 
             //float distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
             //if (distanceToPlayer <= enemyAttack.Instance.range)
@@ -302,6 +303,8 @@ public class enemy : MonoBehaviour
     public bool oldumu;
     public void Damage(int damage)
     {
+        dokundu = true;
+
         currentHp = currentHp - damage;
         Debug.Log(currentHp);
 
@@ -345,7 +348,7 @@ public class enemy : MonoBehaviour
 
     IEnumerator kotektenSonraToparlanma()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(0.5f);
 
         enemyAttak.Instance.canAttack = true;
         canMove = true;

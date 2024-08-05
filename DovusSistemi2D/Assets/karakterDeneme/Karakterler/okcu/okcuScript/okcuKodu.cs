@@ -27,6 +27,17 @@ public class okcuKodu : MonoBehaviour
     public float distanceToPlayer;
 
 
+
+    public static okcuKodu Instance { get; private set; }
+
+
+    private void Awake()
+    {
+        Instance = this;
+
+    }
+
+
     // Start is called before the first frame update
     void Start()
     {
