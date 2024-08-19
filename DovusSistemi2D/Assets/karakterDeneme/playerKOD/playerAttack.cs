@@ -14,6 +14,7 @@ public class playerAttack : MonoBehaviour
 
     public bool savundumu;
     public bool SAVUNABÝLÝRMÝ = true;
+   
 
     float attackTimer = 0.0f;
     public bool atakTamamlandi = true;
@@ -66,7 +67,7 @@ public class playerAttack : MonoBehaviour
     {
         attackTimer += Time.deltaTime;
 
-        if (Input.GetKeyDown(KeyCode.T) && attackTimer > 0.3f && Hareket.Instance.canMove)
+        if (Input.GetKeyDown(KeyCode.T) && attackTimer > 0.15f)
         {
             SAVUNABÝLÝRMÝ = false;
 
@@ -75,21 +76,20 @@ public class playerAttack : MonoBehaviour
             if (sayac == 1)
             {
                 anim.SetTrigger("atak1");
-
+                Hareket.Instance.canMove = false;
             }
             if (sayac == 2)
             {
                 anim.SetTrigger("atak2");
 
-
-            }
-            if (sayac == 3)
-            {
-                anim.SetTrigger("atak3");
                 sayac = 0;
+                attackTimer = 0.0f;
+                Hareket.Instance.canMove = false;
+                
             }
+            
             StartCoroutine(tekrarDEF());
-            attackTimer = 0.0f;
+            StartCoroutine(EnableWalkAfterAttack());
         }
     }
 
@@ -126,7 +126,8 @@ public class playerAttack : MonoBehaviour
 
         foreach (var enemy in hitEnemies)
         {
-            enemy.GetComponent<enemy>().Damage(attackDamage);
+            enemy.GetComponent<enemy>().Damage(attackDamage); 
+            //enemy.GetComponent<BossKod>().Damage(attackDamage);
             //vurusEfektClone = Instantiate(vurusEfektPrefab, enemy.transform);
             //StartCoroutine(efektSolma());
 
@@ -174,7 +175,7 @@ public class playerAttack : MonoBehaviour
     IEnumerator EnableWalkAfterAttack()
     {
         // Saldýrý animasyonunun süresini bekleyin
-        yield return new WaitForSeconds(0.25f);
+        yield return new WaitForSeconds(0.30f);
 
         // Yürüyüþü tekrar etkinleþtir
 

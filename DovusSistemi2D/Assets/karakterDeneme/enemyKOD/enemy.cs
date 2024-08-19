@@ -17,7 +17,7 @@ public class enemy : MonoBehaviour
 
     public bool saldýrýyor;
     public bool dokundu;
-
+    public bool oldumu;
     public bool canMove = true;
 
 
@@ -25,8 +25,8 @@ public class enemy : MonoBehaviour
 
     public Transform target;
 
-    float speed = 1f;
-    float runspeed = 3f;
+    [SerializeField]float speed = 2f;
+    [SerializeField] float runspeed = 4f;
 
     //-------------------------------------
 
@@ -170,15 +170,16 @@ public class enemy : MonoBehaviour
 
         if (canMove)
         {
-            anim.SetBool("isWalking", true);
+            anim.SetBool("isWalking", false);
+            anim.SetBool("isRun", true);
 
             if (transform.position.x < player.transform.position.x)
             {
-                transform.localScale = new Vector3(1, 1, 1);
+                transform.localScale = new Vector3(10, 10, 1);
             }
             if (transform.position.x > player.transform.position.x)
             {
-                transform.localScale = new Vector3(-1, 1, 1);
+                transform.localScale = new Vector3(-10, 10, 1);
             }
 
 
@@ -196,7 +197,7 @@ public class enemy : MonoBehaviour
             distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
             if (distanceToPlayer <= enemyAttak.Instance.range)
             {
-                anim.SetBool("iswalking", false);
+                anim.SetBool("isRun", false);
             }
 
             //float distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
@@ -208,7 +209,7 @@ public class enemy : MonoBehaviour
         }
         if (!canMove)
         {
-            anim.SetBool("isWalking", false);
+            anim.SetBool("isRun", false);
         }
 
 
@@ -260,16 +261,17 @@ public class enemy : MonoBehaviour
 
         if (canMove)
         {
+            anim.SetBool("isRun", false);
             anim.SetBool("isWalking", true);
 
 
             if (target.transform.position.x < transform.position.x)
             {
-                transform.localScale = new Vector3(-1, 1, 1);
+                transform.localScale = new Vector3(-10, 10, 1);
             }
             if (target.transform.position.x > transform.position.x)
             {
-                transform.localScale = new Vector3(1, 1, 1);
+                transform.localScale = new Vector3(10, 10, 1);
             }
 
 
@@ -300,7 +302,7 @@ public class enemy : MonoBehaviour
 
 
 
-    public bool oldumu;
+    
     public void Damage(int damage)
     {
         dokundu = true;
@@ -320,7 +322,7 @@ public class enemy : MonoBehaviour
 
         if (currentHp > 0)
         {
-            anim.SetTrigger("HURT");
+            anim.SetTrigger("enemyHURT");
 
         }
 

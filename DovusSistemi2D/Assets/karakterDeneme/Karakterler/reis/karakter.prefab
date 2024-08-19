@@ -244,6 +244,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  vurusEfektPrefab: {fileID: 7535314121237883958, guid: ba0e8be73badd3a47a494e76078fd18a, type: 3}
   maxHp: 100
   currentHp: 0
   yereInmeEfekt: {fileID: 7535314121237883958, guid: fa93944fbe03b3149a92b76e5257d284, type: 3}

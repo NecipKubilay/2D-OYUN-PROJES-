@@ -121,10 +121,7 @@ public class enemyAttak : MonoBehaviour
 
         //}
 
-        if (distanceToPlayer <= range)
-        {
-            Debug.Log("porno");
-        }
+        
 
 
 
@@ -173,19 +170,19 @@ public class enemyAttak : MonoBehaviour
     {
         enemy.Instance.canMove = false;
         canAttack = false;
-        sayac++;
+        //sayac++;
 
-        if (sayac == 1)
-        {
-            anim.SetTrigger("enemyAttack1");
-        }
+        //if (sayac == 1)
+        //{
+        //    anim.SetTrigger("enemyAttack1");
+        //}
+        anim.SetTrigger("enemyAttack1");
 
-
-        if (sayac == 2)
-        {
-            anim.SetTrigger("enemyAttack2");
-            sayac = 0;
-        }
+        //if (sayac == 2)
+        //{
+        //    anim.SetTrigger("enemyAttack2");
+        //    sayac = 0;
+        //}
 
 
 
@@ -211,7 +208,6 @@ public class enemyAttak : MonoBehaviour
         
     }
 
-    
 
 
 
@@ -275,5 +271,5 @@ public class enemyAttak : MonoBehaviour
 
 
 
-    
+ 
 }

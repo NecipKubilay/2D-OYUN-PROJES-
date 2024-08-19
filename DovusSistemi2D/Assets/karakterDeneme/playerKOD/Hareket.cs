@@ -6,7 +6,8 @@ using UnityEngine;
 public class Hareket : MonoBehaviour
 {
     private float horizontal;
-    private float moveSpeed = 6f;
+    private float walkSpeed = 6f;
+    private float runSpeed = 15f;
     private float jumpingPower = 12f;
     //bool canWalk = true;
     public bool canMove = true;
@@ -119,19 +120,44 @@ public class Hareket : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.D))
             {
-                anim.SetBool("run", true);
+                anim.SetBool("walk", true);
 
+                Movement();
             }
             else if (Input.GetKey(KeyCode.A))
             {
-                anim.SetBool("run", true);
+                anim.SetBool("walk", true);
 
+                Movement();
             }
             else if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A))
             {
+                anim.SetBool("walk", false);
+
+                Movement();
+            }
+
+
+            if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.LeftShift))
+            {
+                anim.SetBool("run", true);
+
+                RunMovement();
+            }
+            else if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.LeftShift))
+            {
+                anim.SetBool("run", true);
+
+                RunMovement();
+            }
+            else if (Input.GetKeyUp(KeyCode.LeftShift))
+            {
                 anim.SetBool("run", false);
 
+                RunMovement();
             }
+
+
         }
 
 
@@ -148,11 +174,11 @@ public class Hareket : MonoBehaviour
 
     }
 
-    void FixedUpdate()
-    {
-        Movement();
+    //void FixedUpdate()
+    //{
+    //    Movement();
 
-    }
+    //}
 
 
 
@@ -183,11 +209,11 @@ public class Hareket : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.A))
             {
-                transform.localScale = new Vector3(-1, 1, 1);
+                transform.localScale = new Vector3(-10, 10, 1);
             }
             else if (Input.GetKey(KeyCode.D))
             {
-                transform.localScale = new Vector3(1, 1, 1);
+                transform.localScale = new Vector3(10, 10, 1);
             }
         }
 
@@ -251,11 +277,16 @@ public class Hareket : MonoBehaviour
 
         if (canMove)
         {
-            transform.Translate(horizontal * Time.deltaTime * moveSpeed, 0, 0);
+            transform.Translate(horizontal * Time.deltaTime * walkSpeed, 0, 0);
         }
+    }
+    void RunMovement()
+    {
 
-
-
+        if (canMove)
+        {
+            transform.Translate(horizontal * Time.deltaTime * runSpeed, 0, 0);
+        }
     }
 
 
@@ -294,19 +325,39 @@ public class Hareket : MonoBehaviour
     {
         currentHp = currentHp - damage;
         canMove = false;
-        if (enemy.Instance.transform.localScale.x < 0)
-        {
-            Vector2 force = new Vector2(-2000, 0);
-            rb.AddForce(force);
-        }
-        if (enemy.Instance.transform.localScale.x > 0)
+
+        if (enemy.Instance != null)
         {
 
-            Vector2 force = new Vector2(2000, 0);
-            rb.AddForce(force);
+            if (enemy.Instance.transform.localScale.x < 0)
+            {
+                Vector2 force = new Vector2(-2000, 0);
+                rb.AddForce(force);
+            }
+            if (enemy.Instance.transform.localScale.x > 0)
+            {
 
+                Vector2 force = new Vector2(2000, 0);
+                rb.AddForce(force);
+
+            }
         }
 
+        if (BossKod.Instance != null)
+        {
+            if (BossKod.Instance.transform.localScale.x < 0)
+            {
+                Vector2 force = new Vector2(-2000, 0);
+                rb.AddForce(force);
+            }
+            if (BossKod.Instance.transform.localScale.x > 0)
+            {
+
+                Vector2 force = new Vector2(2000, 0);
+                rb.AddForce(force);
+
+            }
+        }
 
 
         vurusEfektClone = Instantiate(vurusEfektPrefab, this.transform);
