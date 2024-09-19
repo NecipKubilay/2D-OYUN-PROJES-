@@ -1206,7 +1206,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 802ca2327ab194749a5460c5a2787288, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 1814872882}
 --- !u!114 &1814872881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1226,6 +1225,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  vurusEfektPrefab: {fileID: 0}
   maxHp: 100
   currentHp: 0
   yereInmeEfekt: {fileID: 7535314121237883958, guid: fa93944fbe03b3149a92b76e5257d284, type: 3}
@@ -1295,6 +1295,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   attackDamage: 20
+  savundumu: 0
+  "SAVUNAB\u0130L\u0130RM\u0130": 1
+  atakTamamlandi: 1
   vurusEfektPrefab: {fileID: 7535314121237883958, guid: ba0e8be73badd3a47a494e76078fd18a, type: 3}
 --- !u!1001 &1912034715
 PrefabInstance:
@@ -1351,6 +1354,10 @@ PrefabInstance:
     - target: {fileID: 8814137353235028792, guid: f18ae1ae0634b1141afd943a1d177b63, type: 3}
       propertyPath: m_Name
       value: Enemy 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8814137353235028792, guid: f18ae1ae0634b1141afd943a1d177b63, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -8,11 +8,11 @@ public class Hareket : MonoBehaviour
     private float horizontal;
     private float walkSpeed = 6f;
     private float runSpeed = 15f;
-    private float jumpingPower = 12f;
+    private float jumpingPower = 20f;
     //bool canWalk = true;
     public bool canMove = true;
     public bool yerdemi;
-
+    public bool canRun;
     bool zýplamaHakký;
 
     Animator anim;
@@ -84,13 +84,16 @@ public class Hareket : MonoBehaviour
 
         //Jump();
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded())
+        if (Input.GetKeyDown(KeyCode.Space))
         {
+            //Jump();
             StartCoroutine(Jumping());
-
-
+            
         }
-
+        if (!yerdemi)
+        {
+            anim.SetBool("havada", true);
+        }
         //-----------------------------------------
 
         Flip();
@@ -112,45 +115,45 @@ public class Hareket : MonoBehaviour
 
         //-----------------------------------------
 
-        isGrounded();
+        //isGrounded();
 
-        //-----------------------------------------
+        //------------------Movement-----------------------
 
         if (canMove)
         {
-            if (Input.GetKey(KeyCode.D))
-            {
-                anim.SetBool("walk", true);
+            //if (Input.GetKey(KeyCode.D))
+            //{
+            //    anim.SetBool("walk", true);
 
-                Movement();
+            //    Movement();
+            //}
+            //else if (Input.GetKey(KeyCode.A))
+            //{
+            //    anim.SetBool("walk", true);
+
+            //    Movement();
+            //}
+            //else if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A))
+            //{
+            //    anim.SetBool("walk", false);
+
+            //    Movement();
+            //}
+
+
+            if (Input.GetKey(KeyCode.D) && canRun)
+            {
+                anim.SetBool("run", true);
+
+                RunMovement();
             }
-            else if (Input.GetKey(KeyCode.A))
+            else if (Input.GetKey(KeyCode.A)  && canRun)
             {
-                anim.SetBool("walk", true);
+                anim.SetBool("run", true);
 
-                Movement();
+                RunMovement();
             }
             else if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A))
-            {
-                anim.SetBool("walk", false);
-
-                Movement();
-            }
-
-
-            if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.LeftShift))
-            {
-                anim.SetBool("run", true);
-
-                RunMovement();
-            }
-            else if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.LeftShift))
-            {
-                anim.SetBool("run", true);
-
-                RunMovement();
-            }
-            else if (Input.GetKeyUp(KeyCode.LeftShift))
             {
                 anim.SetBool("run", false);
 
@@ -164,10 +167,7 @@ public class Hareket : MonoBehaviour
 
         //-----------------------------------------
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            anim.SetTrigger("jump");
-        }
+
 
         //-----------------------------------------
 
@@ -182,24 +182,9 @@ public class Hareket : MonoBehaviour
 
 
 
-    bool isGrounded()
-    {
-        //Debug.Log("yere dokundu");
-        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
-
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "Ground")
-        {
-            // Karakter yere deðdi
-            //Debug.Log("karakter yere deydi");
-            yerdemi = true;
 
 
-        }
-    }
+
 
 
 
@@ -221,37 +206,74 @@ public class Hareket : MonoBehaviour
 
 
     private float timer;
-    void Jump()
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded())
+
+        if (collision.gameObject.tag == "Ground")
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
-            anim.SetTrigger("jump");
-            yerdemi = false;
+            // Karakter yere deðdi
+            Debug.Log("karakter yere deydi");
+            yerdemi = true;
 
-
-        }
-
-        if (!yerdemi)
-        {
-            anim.SetBool("run", false);
-        }
-
-        Debug.Log(isGrounded());
-
-        if (isGrounded() == true)
-        {
-            anim.SetTrigger("yereDokundu");
-            Instantiate(yereInmeEfekt, groundCheck.transform.position, Quaternion.identity);
 
         }
     }
 
+
+
+    bool isGrounded()
+    {
+        Debug.Log("yere dokundu");
+        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+
+    }
+    void Jump()
+    {
+
+        anim.SetTrigger("jump");
+        
+        yerdemi = false;
+        
+
+        if (!yerdemi)
+        {
+            Debug.Log("kontrol 1");
+            anim.SetBool("run", false);
+        }
+
+
+
+
+        do
+        {
+            canRun = true;
+            Debug.Log("geldi adam");
+            anim.SetTrigger("yereDokundu");
+            
+        } while (yerdemi);
+
+
+        //Debug.Log(isGrounded());
+
+        //if (isGrounded() == true)
+        //{
+        //    anim.SetTrigger("yereDokundu");
+        //    Instantiate(yereInmeEfekt, groundCheck.transform.position, Quaternion.identity);
+
+        //}
+
+
+    }
+
+
     IEnumerator Jumping()
     {
-        rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+
+        rb.velocity = new Vector2(rb.velocity.x , jumpingPower);
         anim.SetTrigger("jump");
         yerdemi = false;
+        
 
         if (!yerdemi)
         {
@@ -260,30 +282,37 @@ public class Hareket : MonoBehaviour
 
         yield return new WaitForSeconds(0.5f);
 
-        if (yerdemi = true)
+        do
         {
+           
+            Debug.Log("geldi adam");
             anim.SetTrigger("yereDokundu");
 
-        }
+        } while (yerdemi);
     }
+
+    //public void JumpForce()
+    //{
+    //    rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+    //}
     IEnumerator zýplamaZamanAralýgý()
     {
         yield return new WaitForSeconds(0.65f);
         zýplamaHakký = true;
     }
 
-    void Movement()
-    {
+    //void Movement()
+    //{
 
-        if (canMove)
-        {
-            transform.Translate(horizontal * Time.deltaTime * walkSpeed, 0, 0);
-        }
-    }
+    //    if (canMove)
+    //    {
+    //        transform.Translate(horizontal * Time.deltaTime * walkSpeed, 0, 0);
+    //    }
+    //}
     void RunMovement()
     {
 
-        if (canMove)
+        if (canMove && canRun)
         {
             transform.Translate(horizontal * Time.deltaTime * runSpeed, 0, 0);
         }

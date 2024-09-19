@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 71990e563f37d5a4289bc90d7d7a0f89
+guid: b64ca9431632bde4c8edec2518abcdfb
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,511 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: reisJump_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1792
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 381cb34b0f3514744ba89ccacd048a75
-      internalID: -1065273585
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: reisJump_1
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 1792
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 15d52cffde226a545aecc24c4bc36827
-      internalID: 212315941
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: reisJump_2
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 1792
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 035785ab8d1b9f54da009989d671e58c
-      internalID: -1100541940
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: reisJump_3
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 1792
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1b32cc15d747e5e4b99fc32020560275
-      internalID: 1544881501
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: reisJump_4
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 1792
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b72d898e70598ad4aa6793c5d066b451
-      internalID: 1980502343
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: reisJump_5
-      rect:
-        serializedVersion: 2
-        x: 1280
-        y: 1792
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a0f685b04dfcce84f81ebac01d47a790
-      internalID: -264535092
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: reisJump_6
-      rect:
-        serializedVersion: 2
-        x: 1536
-        y: 1792
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 43eb851128e1eb642930422e013c386d
-      internalID: 398298716
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: reisJump_7
-      rect:
-        serializedVersion: 2
-        x: 1792
-        y: 1792
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0e7c3099573efc94f89b7ebdc939c5fd
-      internalID: 534775066
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: reisJump_8
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1536
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 53e0b1ed93c451a41983c58987eee8cc
-      internalID: 1889612893
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: reisJump_9
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 1536
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: afc1ab9232b452b4dbe95e6b49920e4b
-      internalID: 1678188404
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: reisJump_10
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 1536
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6db39685996a62c4881ebc6d3e50ede0
-      internalID: 2089350932
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: reisJump_11
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 1536
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: deebb4f1ae60eb1478da2b5caaa8fdb2
-      internalID: 122524586
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: reisJump_12
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 1536
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c30dba6f2fac45c48b342add15add3a1
-      internalID: -1791330665
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: reisJump_13
-      rect:
-        serializedVersion: 2
-        x: 1280
-        y: 1536
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c9376cdb87eac234e9efc066595ec7a7
-      internalID: -899689273
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: reisJump_14
-      rect:
-        serializedVersion: 2
-        x: 1536
-        y: 1536
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 103348aba12a94b438ec9c5714887b05
-      internalID: -1397561655
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: reisJump_15
-      rect:
-        serializedVersion: 2
-        x: 1792
-        y: 1536
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1a6a6b9bd885d3c4ab944e44e3443195
-      internalID: 843134316
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: reisJump_16
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1280
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8fddd6f6774b4e34b82f4ecdb4e9fe23
-      internalID: 979438915
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: reisJump_17
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 1280
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 51c92788efed6f84b87ec89c711ab7a5
-      internalID: 532422815
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: reisJump_18
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 1280
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7c983c565440f304fbbb0a2c4519606c
-      internalID: -1943321231
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: reisJump_19
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 1280
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b3f0d5978aafbac4a90aa604af4ee852
-      internalID: 1344742983
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: reisJump_20
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 1280
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bca60cbd4c1c3b34fb95f1609a8f04ad
-      internalID: -1927577767
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: reisJump_21
-      rect:
-        serializedVersion: 2
-        x: 1280
-        y: 1280
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 301f1a992da980142b84c1d5392013d0
-      internalID: 12261620
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: reisJump_22
-      rect:
-        serializedVersion: 2
-        x: 1536
-        y: 1280
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a810b90811363bb448ece69982417ce8
-      internalID: -453264385
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: reisJump_23
-      rect:
-        serializedVersion: 2
-        x: 1792
-        y: 1280
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 17e0f3157f832494f8efa9eb935dbcfa
-      internalID: -1249407792
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: reisJump_24
+      name: "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_0"
       rect:
         serializedVersion: 2
         x: 0
@@ -628,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07970073e632d084e8d31af0cd335788
-      internalID: 55873012
+      spriteID: 15d869127437d2748993922a8ee9e057
+      internalID: 25671402
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: reisJump_25
+      name: "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_1"
       rect:
         serializedVersion: 2
         x: 256
@@ -649,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23d460b043b4fc0448f705bf9d5f8c8e
-      internalID: -1076379293
+      spriteID: 8f0e62c1043e696428a704487c03cf0d
+      internalID: -2081967883
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: reisJump_26
+      name: "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_2"
       rect:
         serializedVersion: 2
         x: 512
@@ -670,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f86791668ad834445991ddd6feab8aa4
-      internalID: 1091941853
+      spriteID: 15f3c32a4e6231e42bc1dbfe492f7e44
+      internalID: -967289281
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: reisJump_27
+      name: "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_3"
       rect:
         serializedVersion: 2
         x: 768
@@ -691,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6446d701c7983cf4aa732d77106d9797
-      internalID: -1433424799
+      spriteID: 8f83eb548105ca94893a594da9a62d62
+      internalID: 1875289250
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: reisJump_28
+      name: "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_4"
       rect:
         serializedVersion: 2
         x: 1024
@@ -712,18 +208,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21beea21327cd8c4f9c09789eb944d22
-      internalID: 1156625564
+      spriteID: 110db4ec9a8c2e2489553272e266642c
+      internalID: 1697502690
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: reisJump_29
+      name: "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_5"
       rect:
         serializedVersion: 2
-        x: 1280
-        y: 1024
+        x: 0
+        y: 768
         width: 256
         height: 256
       alignment: 0
@@ -733,8 +229,365 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc346e3654922e74d9d55062d257ae05
-      internalID: -248313666
+      spriteID: e8b1f8e4fed0d4540881af4d74af452b
+      internalID: -1587454074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_6"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11899796e4c1ced47a272024b85ed569
+      internalID: -1366373861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_7"
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d7e34af0b4f13b4cbbb91156b27e9f5
+      internalID: -1959181013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_8"
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b9d299d47f2ee94c8da773013e37147
+      internalID: -1939022444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_9"
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25a1abf7b5a32904e8b723a54477a89c
+      internalID: -1521303085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_10"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce0cd42d66b6554784fd4b27b450581
+      internalID: 79204473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_11"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0bb23887cae1e6409137375c3c9877a
+      internalID: -605959455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_12"
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7afa9153fb9dc34b960907ae75ac3c4
+      internalID: 1144022432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_13"
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efc2e361d15d2564a95996d06689de30
+      internalID: -1079695481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_14"
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d625931f44e113849b8fea19f658706f
+      internalID: 857636863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_15"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04332d297d1a60c4a8a7e32042fd5acd
+      internalID: -1136980087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_16"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec0bb9c80cbaf040af228e89154deb9
+      internalID: -1021911728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_17"
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fda54703641bf845adf0da2a19ae8e4
+      internalID: -1627718456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_18"
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ea5d57e320cace4885807eea413c121
+      internalID: -1339527648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_19"
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91360e115a22ef4408e7e02928247752
+      internalID: 947678050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_20"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa2401c23f7956a4685c61b43d5cdb41
+      internalID: 509643276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_21"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd6d866fc4ba27a4295a70a365dd5061
+      internalID: 244695515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_22"
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c37769922f952941895a88bb1554da3
+      internalID: -854206428
       vertices: []
       indices: 
       edges: []
@@ -750,36 +603,29 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      reisJump_0: -1065273585
-      reisJump_1: 212315941
-      reisJump_10: 2089350932
-      reisJump_11: 122524586
-      reisJump_12: -1791330665
-      reisJump_13: -899689273
-      reisJump_14: -1397561655
-      reisJump_15: 843134316
-      reisJump_16: 979438915
-      reisJump_17: 532422815
-      reisJump_18: -1943321231
-      reisJump_19: 1344742983
-      reisJump_2: -1100541940
-      reisJump_20: -1927577767
-      reisJump_21: 12261620
-      reisJump_22: -453264385
-      reisJump_23: -1249407792
-      reisJump_24: 55873012
-      reisJump_25: -1076379293
-      reisJump_26: 1091941853
-      reisJump_27: -1433424799
-      reisJump_28: 1156625564
-      reisJump_29: -248313666
-      reisJump_3: 1544881501
-      reisJump_4: 1980502343
-      reisJump_5: -264535092
-      reisJump_6: 398298716
-      reisJump_7: 534775066
-      reisJump_8: 1889612893
-      reisJump_9: 1678188404
+      "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_0": 25671402
+      "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_1": -2081967883
+      "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_10": 79204473
+      "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_11": -605959455
+      "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_12": 1144022432
+      "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_13": -1079695481
+      "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_14": 857636863
+      "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_15": -1136980087
+      "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_16": -1021911728
+      "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_17": -1627718456
+      "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_18": -1339527648
+      "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_19": 947678050
+      "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_2": -967289281
+      "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_20": 509643276
+      "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_21": 244695515
+      "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_22": -854206428
+      "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_3": 1875289250
+      "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_4": 1697502690
+      "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_5": -1587454074
+      "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_6": -1366373861
+      "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_7": -1959181013
+      "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_8": -1939022444
+      "reisATAK1-ASEPR\u0130TEeldenGEC\u0130RME_9": -1521303085
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

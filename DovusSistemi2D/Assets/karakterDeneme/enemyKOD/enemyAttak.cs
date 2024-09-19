@@ -30,7 +30,7 @@ public class enemyAttak : MonoBehaviour
 
 
     float cooldownTime = 2f;
-    private float saldýrýZaman = 1.5f;
+    private float saldýrýZaman = 0.8f;
 
     private float lastAttackTime = 0.0f;
 
@@ -130,11 +130,13 @@ public class enemyAttak : MonoBehaviour
         {
             if (distanceToPlayer <= range && canAttack && enemy.Instance.saldýrýyor)
             {
+                //anim.SetBool("isRun", false);
+                //anim.SetBool("isWalking", false);
 
                 float timeSinceLastAttack = Time.time - lastAttackTime;
                 if (timeSinceLastAttack >= saldýrýZaman)
                 {
-                    
+                       
                     StartCoroutine(Saldýrý());
 
                     lastAttackTime = Time.time;
@@ -170,23 +172,22 @@ public class enemyAttak : MonoBehaviour
     {
         enemy.Instance.canMove = false;
         canAttack = false;
-        //sayac++;
+        sayac++;
 
-        //if (sayac == 1)
-        //{
-        //    anim.SetTrigger("enemyAttack1");
-        //}
-        anim.SetTrigger("enemyAttack1");
-
-        //if (sayac == 2)
-        //{
-        //    anim.SetTrigger("enemyAttack2");
-        //    sayac = 0;
-        //}
+        if (sayac == 1)
+        {
+            anim.SetTrigger("enemyAttack1");
+        }
 
 
+        if (sayac == 2)
+        {
+            anim.SetTrigger("enemyAttack2");
+            sayac = 0;
+        }
 
 
+        //anim.SetTrigger("enemyAttack1");
 
 
 
@@ -198,7 +199,8 @@ public class enemyAttak : MonoBehaviour
         }
         if (!playerAttack.instance.savundumu)
         {
-            yield return new WaitForSeconds(2f);
+            
+            yield return new WaitForSeconds(0.6f);
 
             enemy.Instance.canMove = true;
             canAttack= true;
@@ -243,7 +245,7 @@ public class enemyAttak : MonoBehaviour
 
     IEnumerator Toparlan()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
 
         enemy.Instance.canMove = true;
         canAttack = true;

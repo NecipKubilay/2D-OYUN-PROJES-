@@ -93,11 +93,11 @@ public class enemy : MonoBehaviour
     void Update()
     {
 
-
+        //distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
 
         if (!oldumu)
         {
-
+            
             if (!dokundu)
             {
                 if (transform.localScale.x < 0)
@@ -118,6 +118,7 @@ public class enemy : MonoBehaviour
                     {
 
                         Debug.DrawLine(dusmanBakýsNoktasý.transform.position, dusmanBakýsNoktasý.transform.position + DusmanBakýsYonu * 20f, Color.red);
+                        
                         SaldýrýModu();
 
                         string nesneIsmi = lazer.collider.gameObject.name;
@@ -287,6 +288,9 @@ public class enemy : MonoBehaviour
                 target = pointA.transform;
             }
 
+
+
+
             target.position = new Vector3(target.position.x, transform.position.y, transform.position.z);
 
             transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
@@ -310,7 +314,26 @@ public class enemy : MonoBehaviour
         currentHp = currentHp - damage;
         Debug.Log(currentHp);
 
+        //-------------------------------------------
 
+        if (Hareket.Instance != null)
+        {
+
+            if (Hareket.Instance.transform.localScale.x < 0)
+            {
+                Vector2 force = new Vector2(-200, 200);
+                rb.AddForce(force);
+            }
+            if (Hareket.Instance.transform.localScale.x > 0)
+            {
+
+                Vector2 force = new Vector2(200, 200);
+                rb.AddForce(force);
+
+            }
+        }
+
+        //-------------------------------------------
 
         enemyAttak.Instance.canAttack = false;
         canMove = false;
